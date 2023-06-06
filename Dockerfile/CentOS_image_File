@@ -7,9 +7,9 @@ LABEL Version="1.0.0" \
         licence="Apache 2.0" \
         Owner="DevOps Team"
 
-ADD centos-7-docker.tar.xz /
-COPY index.html /opt
-ADD sample.tar /opt
+ADD - centos-7-docker.tar.xz /
+COPY - index.html /opt
+ADD - sample.tar /opt
 
 ADD https://en.wikipedia.org/wiki/Water /opt
 RUN useradd ravdy
